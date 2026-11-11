@@ -52,7 +52,57 @@ function logoutMember(){
 showWelcome();
 </script>
 <!-- END MEMBER LOGIN -->
-<div class="box"><h2>📖 Today's Devotional</h2><p><b>Jeremiah 1:5</b> - "Before I formed you in the womb I knew you, before you were born I set you apart; I appointed you as a prophet to the nations."</p><p>God knew you before you were born. You are not a mistake. You are called for such a time as this. Rise up, Young Prophet!</p><a class="btn" href="sermons.html">Watch Sermons</a></div>
+  <!-- TODAY'S DEVOTIONAL - CHANGES EVERY DAY -->
+<div style="background:#1A2233; padding:24px; border-radius:18px; margin:20px 0; border:1px solid #2A3550;">
+  <h2 style="color:#F5B301; font-family:Georgia, serif; font-size:24px; margin:0;">📖 Today's Devotional</h2>
+  <p id="devDate" style="color:#CBD5E1; font-size:13px; margin:6px 0 0 0;"></p>
+  <p style="color:#FFFFFF; font-size:18px; line-height:1.6; font-weight:700; margin:16px 0 8px 0;"><span id="devRef"></span> - "<span id="devVerse"></span>"</p>
+  <p id="devMessage" style="color:#E2E8F0; font-size:16px; line-height:1.6; margin:0;"></p>
+  <a href="https://www.youtube.com/@YourChannel" style="display:inline-block; background:#F5B301; color:#111111; padding:12px 26px; border-radius:30px; font-weight:800; text-decoration:none; margin-top:18px;">Watch Sermons</a>
+</div>
+
+<script>
+var devotionals = [
+  {v:"Before I formed you in the womb I knew you, before you were born I set you apart; I appointed you as a prophet to the nations.", r:"Jeremiah 1:5", m:"God knew you before you were born. You are not a mistake. You are called for such a time as this. Rise up, Young Prophet!"},
+  {v:"I can do all things through Christ who strengthens me.", r:"Philippians 4:13", m:"You are not weak. Christ in you is your strength today. Do that hard thing - He will carry you through it."},
+  {v:"The Lord is my shepherd; I shall not want.", r:"Psalm 23:1", m:"You will not lack today. Your Shepherd is watching over you, providing, protecting and guiding you."},
+  {v:"For I know the plans I have for you, declares the Lord, plans to prosper you and not to harm you, plans to give you hope and a future.", r:"Jeremiah 29:11", m:"God's plan for you is good. Even if today is hard, your future is still bright in His hands."},
+  {v:"Be still, and know that I am God.", r:"Psalm 46:10", m:"Stop worrying. Be still. God is in control of that situation you are thinking about right now."},
+  {v:"Commit to the Lord whatever you do, and he will establish your plans.", r:"Proverbs 16:3", m:"Give today to God first. Pray before you work, and He will make your plans succeed."},
+  {v:"The Lord will fight for you; you need only to be still.", r:"Exodus 14:14", m:"You don't have to fight every battle. Let God fight for you today."},
+  {v:"Trust in the Lord with all your heart and lean not on your own understanding.", r:"Proverbs 3:5", m:"Even when you don't understand, trust Him. He sees what you cannot see."},
+  {v:"But those who wait on the Lord shall renew their strength; they shall mount up with wings like eagles.", r:"Isaiah 40:31", m:"Waiting is not wasting. God is renewing your strength while you wait."},
+  {v:"God is our refuge and strength, an ever-present help in trouble.", r:"Psalm 46:1", m:"Run to God today. He is your safe place when life is heavy."},
+  {v:"And we know that in all things God works for the good of those who love him.", r:"Romans 8:28", m:"Even this painful thing will turn for your good. God is working behind the scenes."},
+  {v:"Be strong and courageous. Do not be afraid; for the Lord your God will be with you wherever you go.", r:"Joshua 1:9", m:"Fear is lying to you. God is with you in that room, in that exam, in that decision."},
+  {v:"The Lord bless you and keep you; the Lord make his face shine on you.", r:"Numbers 6:24-25", m:"Today, God's face is shining on you. Favour is following you."},
+  {v:"Your word is a lamp for my feet, a light on my path.", r:"Psalm 119:105", m:"Confused about next step? Open His Word. One verse can light your whole path."},
+  {v:"Seek first his kingdom and his righteousness, and all these things will be given to you as well.", r:"Matthew 6:33", m:"Put God first today, and watch Him add what you need."},
+  {v:"I will never leave you nor forsake you.", r:"Hebrews 13:5", m:"You are never alone. Even when people leave, God stays."},
+  {v:"Cast all your anxiety on him because he cares for you.", r:"1 Peter 5:7", m:"Give that worry to God now. He cares about you more than you know."},
+  {v:"The joy of the Lord is your strength.", r:"Nehemiah 8:10", m:"Don't let sadness steal your day. His joy is your strength."},
+  {v:"Walk by faith, not by sight.", r:"2 Corinthians 5:7", m:"What you see is not the end. Walk by what God said, not what you feel."},
+  {v:"No weapon formed against you shall prosper.", r:"Isaiah 54:17", m:"That attack will not win. You are covered by God."},
+  {v:"Delight yourself in the Lord, and he will give you the desires of your heart.", r:"Psalm 37:4", m:"Love God first, and He will surprise you with the desires of your heart."},
+  {v:"In all your ways acknowledge him, and he will make your paths straight.", r:"Proverbs 3:6", m:"Invite God into every decision today - He will show you the right way."},
+  {v:"Peace I leave with you; my peace I give you.", r:"John 14:27", m:"Jesus is giving you peace today. Not worldly peace, but His peace."},
+  {v:"For God has not given us a spirit of fear, but of power and of love and of a sound mind.", r:"2 Timothy 1:7", m:"You have power! You have love! You have a sound mind! Fear is not from God."},
+  {v:"The Lord is my light and my salvation — whom shall I fear?", r:"Psalm 27:1", m:"God is your light in darkness. No need to fear today."},
+  {v:"Weeping may stay for the night, but rejoicing comes in the morning.", r:"Psalm 30:5", m:"Your night is ending. Joy is coming in the morning. Hold on!"},
+  {v:"Let everything that has breath praise the Lord.", r:"Psalm 150:6", m:"If you are breathing, you have a reason to praise. Praise Him today!"},
+  {v:"My grace is sufficient for you, for my power is made perfect in weakness.", r:"2 Corinthians 12:9", m:"His grace is enough for you today, even in your weakness."},
+  {v:"This is the day the Lord has made; let us rejoice and be glad in it.", r:"Psalm 118:24", m:"Today is a gift from God. Rejoice! Be glad!"},
+  {v:"He who began a good work in you will carry it on to completion.", r:"Philippians 1:6", m:"God started something in you and He will finish it. You are still becoming."},
+  {v:"Let all that you do be done in love.", r:"1 Corinthians 16:14", m:"Do everything today with love - and God will be glorified through you."}
+];
+var d = new Date();
+var i = (d.getDate() - 1) % devotionals.length;
+document.getElementById('devVerse').innerText = devotionals[i].v;
+document.getElementById('devRef').innerText = devotionals[i].r;
+document.getElementById('devMessage').innerText = devotionals[i].m;
+document.getElementById('devDate').innerText = d.toLocaleDateString('en-GH', { weekday:'long', day:'numeric', month:'long', year:'numeric' });
+</script>
+<!-- END DEVOTIONAL -->
 <div class="box"><h2>🎥 Latest Sermons</h2><p>• The Voice of God - How to Hear God Clearly<br>• Fire on the Altar - Prayer That Moves Heaven<br>• Called & Chosen - Walking in Your Prophetic Gift</p><a class="btn" href="sermons.html">All Sermons →</a></div>
 <div class="box"><h2>🙏 Need Prayer?</h2><p>We are praying with you. Send your request and our prayer team will stand with you.</p><form><input placeholder="Your Name"><input placeholder="Your WhatsApp Number"><textarea placeholder="Your Prayer Request..."></textarea><button>Send Prayer Request 🙏</button></form></div>
 <div class="box"><h2>❤️ Give & Partner</h2><p>Your seed helps us reach more young people for Jesus. Thank you for sowing!</p><p><b>MTN MoMo:</b> 0536517932 - Edmond Ocran</p><a class="btn" href="give.html">Give Now</a></div>
