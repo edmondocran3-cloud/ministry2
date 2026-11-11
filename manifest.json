@@ -1,1 +1,21 @@
-
+{
+  "name": "Young Prophets Ministry",
+  "short_name": "Young Prophets",
+  "description": "Raising a generation of Prophets, Prayer Warriors & Kingdom Leaders - Pastor Edmond Ocran, Accra Ghana",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#FFD700",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
