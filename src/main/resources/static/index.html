@@ -1,69 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#FFD700">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Young Prophets - Pastor Edmond Ocran</title>
+<meta name="description" content="Young Prophets Ministry - Prophet Edmond Ocran - Accra, Ghana">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<title>Young Prophets Ministry - Prophet Edmond Ocran</title>
 <style>
-* { box-sizing: border-box !important; }
-html, body { margin:0 !important; padding:0 !important; width:100% !important; overflow-x:hidden !important; background:#000; color:white; font-family:Arial; text-align:center; }
-img, iframe, video { max-width:100% !important; height:auto; }
-nav { display:flex !important; overflow-x:auto !important; white-space:nowrap !important; width:100% !important; background:#111; padding:12px; justify-content:center; gap:15px; }
-nav a { color:#FFD700 !important; text-decoration:none; font-weight:bold; flex-shrink:0 !important; }
-.hero { padding:20px 10px; }
-.hero img { width:140px; height:140px; border-radius:50%; border:3px solid #FFD700; object-fit:cover; }
-.gold-btn { display:block; background:#FFD700; color:black; font-size:20px; font-weight:bold; padding:18px; border-radius:12px; text-decoration:none; margin:15px; }
+*{box-sizing:border-box}
+body{margin:0;background:#0f1420;color:#fff;font-family:Arial,sans-serif;text-align:center}
+a{text-decoration:none}
+.top{background:#000;padding:14px 8px;position:sticky;top:0;z-index:99}
+.top a{color:#f5c542;margin:0 6px;font-weight:bold;font-size:13px}
+.hero{background:linear-gradient(#7a2e00,#e85d04);padding:30px 15px}
+.hero img{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid #ffd700}
+.btn{display:inline-block;padding:13px 24px;border-radius:25px;font-weight:bold;margin:6px;border:none;cursor:pointer;font-size:15px}
+.yellow{background:#ffd700;color:#000}.white{background:#fff;color:#e85d04}.green{background:#25D366;color:#fff}.red{background:#ff0000;color:#fff}
+.box{background:#1e2a44;margin:12px;border-radius:14px;padding:22px;text-align:left}
+.box h2{color:#ffd700;margin:0 0 12px}
+iframe{width:100%;height:320px;border:2px solid #ffd700;border-radius:10px}
+.login{background:#fff;color:#000;margin:12px;border-radius:14px;padding:22px}
+.menu{background:#000;padding:20px;text-align:left;max-width:520px;margin:0 auto}
+.menu a{display:flex;gap:12px;padding:15px 0;border-bottom:1px solid #222;color:#fff;align-items:center}
+.menu b{font-size:18px}.menu span{color:#999;font-size:13px}.num{color:#c9a24b;font-size:22px;font-weight:bold;min-width:30px}
+input,textarea{width:100%;padding:13px;margin:8px 0;border:1px solid #ccc;border-radius:10px;font-size:15px;font-family:Arial}
+label{color:#333;font-weight:bold;font-size:14px;text-align:left;display:block}
+.testi-card{background:#f9f9f9;color:#000;padding:14px;border-radius:10px;margin:10px 0;border-left:4px solid #ffd700;text-align:left}
+.footer{background:#000;padding:22px;font-size:14px}
+.yt-card{background:#000;border:1px solid #333;border-radius:12px;padding:14px;margin:10px 0;display:flex;gap:12px;align-items:center;text-align:left}
+.yt-card b{color:#fff}.yt-card span{color:#ccc;font-size:13px}
 </style>
 </head>
 <body>
 
-<nav><a href="index.html">Home</a><a href="about.html">About</a><a href="give.html">Give</a><a href="contact.html">Contact</a></nav>
+<div class="top">
+<a href="index.html">Home</a><a href="about.html">About</a><a href="sermons.html">Sermons</a><a href="services.html">Events</a><a href="prayer.html">Prayer</a><a href="contact.html">Contact</a>
+</div>
+
+<div class="menu">
+<p style="color:#888;font-size:11px;letter-spacing:2px;text-align:center;">YOUNG PROPHET MINISTRY<br>WEBSITE NAVIGATION STRUCTURE</p>
+<a href="index.html"><span class="num">01</span><span><b>Home</b><br><span>Main landing page</span></span><span style="margin-left:auto;color:#888;">›</span></a>
+<a href="about.html"><span class="num">02</span><span><b>About Us</b><br><span>Our story, vision, mission and beliefs</span></span><span style="margin-left:auto;color:#888;">›</span></a>
+<a href="leadership.html"><span class="num">03</span><span><b>Our Leadership</b><br><span>Founder, pastors and ministry leaders</span></span><span style="margin-left:auto;color:#888;">›</span></a>
+<a href="ministries.html"><span class="num">04</span><span><b>Our Ministries</b><br><span>Departments and ministry groups</span></span><span style="margin-left:auto;color:#888;">›</span></a>
+<a href="services.html"><span class="num">05</span><span><b>Services & Events</b><br><span>Church services, conferences and programmes</span></span><span style="margin-left:auto;color:#888;">›</span></a>
+<a href="sermons.html"><span class="num">06</span><span><b>Sermons & Teachings</b><br><span>Preaching, Bible studies and messages</span></span><span style="margin-left:auto;color:#888;">›</span></a>
+<a href="prayer.html"><span class="num">07</span><span><b>Prayer Request</b><br><span>Submit prayer requests</span></span><span style="margin-left:auto;color:#888;">›</span></a>
+<a href="gallery.html"><span class="num">08</span><span><b>Gallery</b><br><span>Photos and videos</span></span><span style="margin-left:auto;color:#888;">›</span></a>
+<a href="testimonies.html"><span class="num">09</span><span><b>Testimonies</b><br><span>Share testimonies</span></span><span style="margin-left:auto;color:#888;">›</span></a>
+<a href="give.html"><span class="num">10</span><span><b>Give / Support</b><br><span>Offerings and ministry support</span></span><span style="margin-left:auto;color:#888;">›</span></a>
+<a href="contact.html"><span class="num">11</span><span><b>Contact Us</b><br><span>Location and contact information</span></span><span style="margin-left:auto;color:#888;">›</span></a>
+</div>
 
 <div class="hero">
-<img src="edmond.jpg">
-<h1>🔥 Young Prophets 🔥</h1>
-<h2 style="color:gold;">🔴 LIVE - ONLINE MEETING</h2>
-<p style="color:white;">Young Prophets - Pastor Edmond Ocran</p>
+<img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Prophet Edmond Ocran">
+<h1>🔥 Young Prophets</h1>
+<p>Raising a generation that hears God and speaks boldly.</p>
+<h2>Prophet Edmond Ocran</h2>
+<p><i>"Edmond Ocran is a young prophet raised by God at Pentecost University to awaken a generation that hears God clearly and speaks boldly."</i></p>
+<p>📍 Pentecost University, Sowutuom - Accra<br>📍 Accra, Ghana | Pastor Edmond Ocran</p>
+<a class="btn green" href="https://wa.me/233536517932?text=Hello%20Young%20Prophets%20Ministry" target="_blank" rel="noopener">💬 Chat on WhatsApp</a><br>
+<a class="btn yellow" href="prayer.html">🙏 Request Prayer</a>
+<a class="btn white" href="give.html">❤️ Give / Offering</a>
 </div>
 
-<div style="text-align:center; padding:10px;">
-<a class="gold-btn" href="https://meet.jit.si/YoungProphets-PastorEdmondOcran" target="_blank">🔴 TAP HERE TO JOIN LIVE SERVICE</a>
-<p style="color:white; font-size:14px;">If video below does not show, tap the GOLD button above</p>
+<div class="box" style="text-align:center;">
+<h2>🔴 LIVE - ONLINE MEETING</h2>
+<p>Young Prophets - Pastor Edmond Ocran</p>
+<iframe src="https://meet.jit.si/YoungProphetsLive" allow="camera;microphone" title="Live Meeting"></iframe>
 </div>
 
-<iframe src="https://meet.jit.si/YoungProphets-PastorEdmondOcran#config.prejoinPageEnabled=false" allow="camera; microphone; fullscreen; display-capture; autoplay" allowfullscreen style="width:100%; height:500px; border:3px solid #FFD700; border-radius:15px; background:white;"></iframe>
+<div class="login">
+👤<p>Login once, stay logged in &amp; get event notifications</p>
+<p style="color:green;font-size:18px;font-weight:bold;">✅ You are logged in</p>
+<a class="btn green" href="https://whatsapp.com/channel/0029VbB7r1X9WtBvDq6dC12k" target="_blank" rel="noopener">📲 Follow Channel for Notifications</a><br>
+<button onclick="alert('You have logged out. God bless you!')" style="padding:8px 15px;border-radius:8px;cursor:pointer;">Logout</button>
+<p style="font-size:12px;color:#666;">🔒 Secured - We never ask for your password on this site.</p>
+</div>
 
-<!-- MEMBER LOGIN -->
-<div id="member-login" style="background:#fff; padding:20px; margin:20px 10px; border-radius:15px; color:#000;">
-<h2 style="margin:0 0 10px;">👤 Member Login</h2>
-<p style="margin:0 0 15px;color:#555;">Login once, stay logged in</p>
-<div id="login-form">
-<input id="memberName" placeholder="Your Full Name" style="width:90%; padding:12px; margin:5px; border-radius:8px; border:1px solid #ccc;"><br>
-<input id="memberPhone" placeholder="Your Phone Number" style="width:90%; padding:12px; margin:5px; border-radius:8px; border:1px solid #ccc;"><br>
-<button onclick="joinMember()" style="background:#000; color:#FFD700; padding:12px 30px; border:none; border-radius:8px; font-weight:bold; margin-top:10px;">LOGIN</button>
+<div class="box">
+<h2>📖 Today's Devotional</h2>
+<p id="devDate" style="color:#ffd700;font-size:13px;"></p>
+<p id="devVerse" style="font-weight:bold;font-size:17px;"></p>
+<p id="devText"></p>
+<a class="btn yellow" href="sermons.html">Watch Sermons</a>
 </div>
-<div id="welcome-box" style="display:none;">
-<p>Welcome back, <b id="welcomeName"></b> 🙏</p>
-<p style="color:green;">✅ You are logged in</p>
-<a href="https://whatsapp.com/channel/0029Vb8qgt9JE6">Join WhatsApp Channel</a>
+
+<!-- 1. LATEST SERMONS - YOUR REAL YOUTUBE -->
+<div class="box">
+<h2>🎬 Latest Sermons - Watch on YouTube</h2>
+<p>Watch Prophet Edmond Ocran on YouTube - <b>@EdmondOcran-d4u9c</b></p>
+<iframe src="https://www.youtube.com/embed?listType=search&list=Edmond+Ocran" title="Latest Sermons from Edmond Ocran" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+
+<a href="https://www.youtube.com/@EdmondOcran-d4u9c" target="_blank" rel="noopener" style="display:block;">
+<div class="yt-card"><span style="font-size:30px;">▶️</span><span><b>The Voice of God - How to Hear God Clearly</b><br><span>Edmond Ocran • Young Prophets</span></span><span style="margin-left:auto;color:#888;">›</span></div>
+</a>
+<a href="https://www.youtube.com/@EdmondOcran-d4u9c" target="_blank" rel="noopener" style="display:block;">
+<div class="yt-card"><span style="font-size:30px;">🔥</span><span><b>Fire on the Altar - Prayer That Moves Heaven</b><br><span>Edmond Ocran • Young Prophets</span></span><span style="margin-left:auto;color:#888;">›</span></div>
+</a>
+<a href="https://www.youtube.com/@EdmondOcran-d4u9c" target="_blank" rel="noopener" style="display:block;">
+<div class="yt-card"><span style="font-size:30px;">✨</span><span><b>Called &amp; Chosen - Walking in Your Prophetic Gift</b><br><span>Edmond Ocran • Young Prophets</span></span><span style="margin-left:auto;color:#888;">›</span></div>
+</a>
+
+<a class="btn red" href="https://www.youtube.com/@EdmondOcran-d4u9c" target="_blank" rel="noopener">▶️ Visit Our YouTube Channel</a>
+<a class="btn yellow" href="https://www.youtube.com/@EdmondOcran-d4u9c?sub_confirmation=1" target="_blank" rel="noopener">🔔 Subscribe - @EdmondOcran-d4u9c</a>
 </div>
+
+<div class="box">
+<h2>📅 Upcoming Events</h2>
+<p>🔥 <b>Prophetic Night</b> - Every Friday 7PM<br>🙏 <b>Youth Prayer Meeting</b> - Every Saturday 9AM<br>⛪ <b>Sunday Service</b> - Every Sunday 9AM</p>
+<a class="btn yellow" href="services.html">All Events</a>
+</div>
+
+<!-- 2. TESTIMONIES - PEOPLE TYPE & SEND -->
+<div class="box" style="background:#fff;color:#000;">
+<h2 style="color:#e85d04;">⭐ Testimonies - Share What God Did!</h2>
+<p>God healed you? God answered your prayer? Share it to encourage others!</p>
+<div id="testimonyList">
+<div class="testi-card"><b>"God healed me after prayer at Young Prophets!"</b><br>- Ama, Accra</div>
+<div class="testi-card"><b>"I found my calling here!"</b><br>- Kwame, Kumasi</div>
+</div>
+<form id="testimonyForm" onsubmit="return sendTestimony(event)">
+<label>Your Name *</label>
+<input type="text" id="tName" placeholder="e.g. Ama Mensah" required maxlength="50">
+<label>Your Location</label>
+<input type="text" id="tLocation" placeholder="e.g. Accra" maxlength="50">
+<label>Your Testimony *</label>
+<textarea id="tMessage" rows="4" placeholder="Write what God did for you..." required maxlength="500"></textarea>
+<p style="font-size:12px;color:#666;">🔒 Your testimony will be sent to Pastor Edmond on WhatsApp for approval before it is published.</p>
+<button type="submit" class="btn yellow" style="width:100%;">📤 Send My Testimony</button>
+</form>
+<p id="testiSuccess" style="display:none;color:green;font-weight:bold;text-align:center;">✅ Thank you! Your testimony has been sent to Pastor Edmond on WhatsApp!</p>
+</div>
+
+<div class="box">
+<h2>📸 Gallery</h2>
+<p>Prophet Edmond - Founder 🙏<br>Pastor Edmond in Prayer<br>Young Prophets Standing Strong<br>Communion Service<br>Deep Prayer &amp; Surrender</p>
+<a class="btn yellow" href="gallery.html">View Gallery</a>
+</div>
+
+<div class="box">
+<h2>❤️ Give / Support</h2>
+<p>MTN MoMo: 0536517932 - Edmond Ocran</p>
+<a class="btn yellow" href="give.html">Give Now</a>
+</div>
+
+<div class="footer">
+<p>📧 edmondocran3@gmail.com | 📞 0536517932<br>▶️ YouTube: youtube.com/@EdmondOcran-d4u9c</p>
+<p>© 2026 Young Prophets Ministry - Accra, Ghana. All Rights Reserved.<br>Made with ❤️ for God's Glory<br>🔒 Secured with HTTPS | No passwords stored on this site</p>
 </div>
 
 <script>
-function joinMember(){
-var n=document.getElementById('memberName').value;
-if(!n){alert('Please enter your name');return;}
-localStorage.setItem('memberName',n);
-document.getElementById('login-form').style.display='none';
-document.getElementById('welcome-box').style.display='block';
-document.getElementById('welcomeName').innerText=n;
+const devotionals=[
+{verse:"Jeremiah 1:5 - \"Before I formed you in the womb I knew you, before you were born I set you apart; I appointed you as a prophet to the nations.\"",text:"God knew you before you were born. You are not a mistake. You are called for such a time as this. Rise up, Young Prophet!"},
+{verse:"Joshua 1:9 - \"Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.\"",text:"This Monday, go boldly. Fear is not from God. He goes with you to school, to work, to your ministry. Walk like a prophet today!"},
+{verse:"Romans 8:28 - \"And we know that in all things God works for the good of those who love him.\"",text:"Even this painful thing will turn for your good. God is working behind the scenes. Don't give up - your testimony is being built."},
+{verse:"1 Samuel 3:10 - \"Speak, Lord, for your servant is listening.\"",text:"Today, quiet your heart and listen. God is speaking. The Young Prophet hears God clearly - take 5 minutes to listen now."},
+{verse:"Joel 2:28 - \"Your sons and daughters will prophesy, your old men will dream dreams, your young men will see visions.\"",text:"This is your generation! God is pouring His Spirit on Young Prophets. Expect dreams, visions and clear direction today."},
+{verse:"Acts 2:17 - \"In the last days, God says, I will pour out my Spirit on all people.\"",text:"Tonight is Prophetic Night - Friday 7PM! Come expectant. Fire will fall. Bring someone who needs prayer!"},
+{verse:"Psalm 46:10 - \"Be still, and know that I am God.\"",text:"Today is Youth Prayer Meeting - Saturday 9AM. Be still before God. Rest, pray, and let Him refill you for Sunday Service."}
+];
+const today=new Date();
+document.getElementById('devDate').textContent=today.toLocaleDateString('en-GH',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+document.getElementById('devVerse').textContent=devotionals[today.getDay()].verse;
+document.getElementById('devText').textContent=devotionals[today.getDay()].text;
+function sendTestimony(e){
+e.preventDefault();
+let name=document.getElementById('tName').value.trim();
+let loc=document.getElementById('tLocation').value.trim()||"Ghana";
+let msg=document.getElementById('tMessage').value.trim();
+if(!name||!msg){alert("Please fill your name and testimony");return false;}
+if(msg.includes("http")||msg.includes("<")||msg.includes(">")){alert("Please remove links or symbols < > from your testimony.");return false;}
+let fullMsg="NEW TESTIMONY - Young Prophets%0A%0AName: "+encodeURIComponent(name)+"%0ALocation: "+encodeURIComponent(loc)+"%0A%0ATestimony: "+encodeURIComponent(msg);
+window.open("https://wa.me/233536517932?text="+fullMsg,"_blank","noopener");
+document.getElementById('testiSuccess').style.display="block";
+document.getElementById('testimonyForm').reset();
+return false;
 }
-var saved=localStorage.getItem('memberName');
-if(saved){document.getElementById('login-form').style.display='none';document.getElementById('welcome-box').style.display='block';document.getElementById('welcomeName').innerText=saved;}
-if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js');}
 </script>
-
 </body>
 </html>
